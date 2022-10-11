@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    overflow: hidden;
+}
+
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1250px;
+    background-image: url(../medlems_side_img/medlemsLogin.png);
+    background-size: cover;
+    box-shadow: 10px 10px 25px 0 #531b0e inset, -10px -10px 25px 0 #531b0e inset;
+}
+
+.subContainer {
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    color: #fff;
+    height: 25px;
+    width: 125px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+input:focus {
+    outline: none;
+}
+
+.userForm {
+    grid-area: 5/2/7/4;
+    transform: translate(-1%, -50%);
+}
+
+.userPassword {
+    grid-area: 6/2/8/4;
+    transform: translateY(65%);
+}
+
+.navn {
+    grid-area: 4/2/6/4;
+    color: white;
+    font-size: 30px;
+    transform: translateX(-12%);
+}
+
+.pass {
+    grid-area: 5/2/7/4;
+    color: white;
+    font-size: 30px;
+    transform: translate(-20%, 25%);
+}
+
+.loginBtn,
+a {
+    grid-area: 7/2/9/4;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #a15414;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px #000000bf;
+    width: 125px;
+    height: 40px;
+    cursor: pointer;
+    transition: 1s ease;
+    transform: translateX(2%);
+}
+
+button:hover {
+    background-color: white;
+    color: #a15414;
+}
+
+.accountTxt {
+    color: white;
+    white-space: nowrap;
+    text-align: center;
+    font-weight: bold;
+    grid-area: 4/8/6/10;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    font-size: 20px;
+}
+
+.regBtn {
+    grid-area: 5/9/7/11;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #a15414;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px #000000bf;
+    width: 125px;
+    height: 40px;
+    cursor: pointer;
+    transition: 1s ease;
+    transform: translateX(-30%);
+}
+
+.door {
+    object-fit: contain;
+    width: 415px;
+    height: 573px;
+    transform: translateY(8.5%);
+    position: absolute;
+}
+
+.woodPlankLeft {
+    height: 100vh;
+    width: 450px;
+    background-image: url(../medlems_side_img/medlemLoginWoodPlanks.png);
+    background-size: cover;
+}
+
+.woodPlankRight {
+    height: 100vh;
+    width: 480px;
+    background-image: url(../medlems_side_img/medlemLoginWoodPlankRight.png);
+    background-size: cover;
+}
+
+// modal start
+#myBtn {
+    grid-area: 7/9/9/11;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #a15414;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px #000000bf;
+    width: 125px;
+    height: 40px;
+    cursor: pointer;
+    transition: 1s ease;
+    transform: translateX(-30%);
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 225px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-image: url(../medlems_side_img/modalImgScroll.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    height: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #a15414;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 5rem;
+    margin-top: 4.5rem;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background-color: white;
+    color: #a15414;
+}
+
+.modalHeader {
+    padding-left: 5rem;
+    padding-top: 5rem;
+}
+
+.modalParagraph {
+    margin: 1rem 5rem 0rem 5rem;
+}
+// modal end

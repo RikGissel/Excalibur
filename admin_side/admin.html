@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/admin.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+            crossorigin="anonymous"
+        />
+        <title>Admin Panel</title>
+    </head>
+    <body>
+        <!-- MAIN WRAPPER START -->
+        <main>
+            <!-- TABS START -->
+            <div class="tab">
+                <header>
+                    <a href="#"><img class="admin-header tablinks" id="defaultOpen" onclick="openTab(event, 'admin-sec')" src="../assets/img/Excalibur_Logo.png" alt="" /></a>
+                </header>
+                <hr class="logo-hr" />
+                <button class="tablinks" onclick="openTab(event, 'arrangementer')"><i class="fas fa-scroll" id="icons1"></i>Arrangementer</button>
+                <button class="tablinks" onclick="openTab(event, 'billeder')"><i class="fas fa-feather-alt" id="icons2"></i>Billeder</button>
+                <button class="tablinks" onclick="openTab(event, 'kalender')"><i class="far fa-calendar-alt" id="icons3"></i>Kalender</button>
+                <button class="tablinks" onclick="openTab(event, 'kontaktoplysninger')"><i class="far fa-address-book" id="icons4"></i>Kontaktoplysninger</button>
+                <button class="tablinks" onclick="openTab(event, 'nyheder')"><i class="fas fa-newspaper" id="icons5"></i>Nyheder</button>
+                <button class="tablinks" onclick="openTab(event, 'sikkerhed')"><i class="fas fa-shield-alt" id="icons6"></i>Sikkerhed</button>
+            </div>
+            <!-- TABS END -->
+
+            <!-- ADMIN LOGO START -->
+            <div id="admin-sec" class="tabcontent">
+                <h2 class="heading">Admin Panel</h2>
+            </div>
+            <!-- ADMIN LOGO END -->
+
+            <!-- TABS CONTENT START -->
+            <!-- arrangement tab start -->
+            <div id="arrangementer" class="tabcontent">
+                <h2 class="tab1-heading">Arrangementer</h2>
+                <hr class="arrangementer-hr" />
+
+                <div class="tab1">
+                    <button class="tablinks1" onclick="openCity(event, '2019')">2019</button>
+                    <button class="tablinks1" onclick="openCity(event, '2020')">2020</button>
+                    <button class="tablinks1" onclick="openCity(event, '2021')">2021</button>
+                    <button class="tablinks1" onclick="openCity(event, '2022')">2022</button>
+                </div>
+
+                <div id="2019" class="tabcontent1">
+                    <div class="red">
+                        kl 20:00 - 22:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Rollespil i skoven</p>
+                        <div class="date-container">
+                            <p class="date">Søndag d. 10 marts</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="yellow">
+                        kl 19:00 - 21:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Krea-dag</p>
+                        <div class="date-container krea-dag">
+                            <p class="date">Søndag d. 24 marts</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="blue">
+                        kl 15:00 - 16:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Bowling tur</p>
+                        <div class="date-container bowling">
+                            <p class="date">Søndag d. 7 april</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="green">
+                        kl 18:00 - 20:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Rollespills foregningen</p>
+                        <div class="date-container rollespil">
+                            <p class="date">Søndag d. 21 april</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="2020" class="tabcontent1">
+                    <div class="red">
+                        kl 20:00 - 22:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Rollespil i skoven</p>
+                        <div class="date-container">
+                            <p class="date">Søndag d. 10 marts</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="yellow">
+                        kl 19:00 - 21:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Krea-dag</p>
+                        <div class="date-container krea-dag">
+                            <p class="date">Søndag d. 24 marts</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="blue">
+                        kl 15:00 - 16:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Bowling tur</p>
+                        <div class="date-container bowling">
+                            <p class="date">Søndag d. 7 april</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="green">
+                        kl 18:00 - 20:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Rollespills foregningen</p>
+                        <div class="date-container rollespil">
+                            <p class="date">Søndag d. 21 april</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="2021" class="tabcontent1">
+                    <div class="red">
+                        kl 20:00 - 22:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Rollespil i skoven</p>
+                        <div class="date-container">
+                            <p class="date">Søndag d. 10 marts</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="yellow">
+                        kl 19:00 - 21:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Krea-dag</p>
+                        <div class="date-container krea-dag">
+                            <p class="date">Søndag d. 24 marts</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="blue">
+                        kl 15:00 - 16:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Bowling tur</p>
+                        <div class="date-container bowling">
+                            <p class="date">Søndag d. 7 april</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="green">
+                        kl 18:00 - 20:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Rollespills foregningen</p>
+                        <div class="date-container rollespil">
+                            <p class="date">Søndag d. 21 april</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="2022" class="tabcontent1">
+                    <div class="red">
+                        kl 20:00 - 22:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Rollespil i skoven</p>
+                        <div class="date-container">
+                            <p class="date">Søndag d. 10 marts</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="yellow">
+                        kl 19:00 - 21:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Krea-dag</p>
+                        <div class="date-container krea-dag">
+                            <p class="date">Søndag d. 24 marts</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="blue">
+                        kl 15:00 - 16:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Bowling tur</p>
+                        <div class="date-container bowling">
+                            <p class="date">Søndag d. 7 april</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="green">
+                        kl 18:00 - 20:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Rollespills foregningen</p>
+                        <div class="date-container rollespil">
+                            <p class="date">Søndag d. 21 april</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- arrangement tab end -->
+
+            <!-- billeder tab start -->
+            <div id="billeder" class="tabcontent">
+                <h2 class="tab1-heading">Billeder</h2>
+                <hr class="arrangementer-hr" />
+
+                <div class="tab1">
+                    <button class="tablinks1" onclick="openCity(event, 'b-tab1')">2019</button>
+                    <button class="tablinks1" onclick="openCity(event, 'b-tab2')">2020</button>
+                    <button class="tablinks1" onclick="openCity(event, 'b-tab3')">2021</button>
+                    <button class="tablinks1" onclick="openCity(event, 'b-tab4')">2022</button>
+                </div>
+
+                <div id="b-tab1" class="tabcontent1">
+                    <div class="red">
+                        <img class="img-sec-billeder" src="../assets/spil-images/DSC06853.JPG" alt="" />
+                        <div class="date-container billede-tab">
+                            <p class="date">Uploaded december d. 20</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="yellow">
+                        <img class="img-sec-billeder" src="../assets/spil-images/DSC06867.JPG" alt="" />
+                        <div class="date-container billede-tab">
+                            <p class="date">Uploaded december d. 25</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="b-tab2" class="tabcontent1">
+                    <div class="red">
+                        <img class="img-sec-billeder" src="../assets/spil-images/DSC06853.JPG" alt="" />
+                        <div class="date-container billede-tab">
+                            <p class="date">Uploaded december d. 20</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="yellow">
+                        <img class="img-sec-billeder" src="../assets/spil-images/DSC06867.JPG" alt="" />
+                        <div class="date-container billede-tab">
+                            <p class="date">Uploaded december d. 25</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="b-tab3" class="tabcontent1">
+                    <div class="red">
+                        <img class="img-sec-billeder" src="../assets/spil-images/DSC06853.JPG" alt="" />
+                        <div class="date-container billede-tab">
+                            <p class="date">Uploaded december d. 20</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="yellow">
+                        <img class="img-sec-billeder" src="../assets/spil-images/DSC06867.JPG" alt="" />
+                        <div class="date-container billede-tab">
+                            <p class="date">Uploaded december d. 25</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="b-tab4" class="tabcontent1">
+                    <div class="red">
+                        <img class="img-sec-billeder" src="../assets/spil-images/DSC06853.JPG" alt="" />
+                        <div class="date-container billede-tab">
+                            <p class="date">Uploaded december d. 20</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="yellow">
+                        <img class="img-sec-billeder" src="../assets/spil-images/DSC06867.JPG" alt="" />
+                        <div class="date-container billede-tab">
+                            <p class="date">Uploaded december d. 25</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-comment"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- billeder tab end -->
+
+            <!-- kalender tab start -->
+            <div id="kalender" class="tabcontent">
+                <h2 class="tab1-heading">Kalender</h2>
+                <hr class="arrangementer-hr" />
+
+                <div class="tab1">
+                    <button class="tablinks1" onclick="openCity(event, 'k-tab1')">2019</button>
+                    <button class="tablinks1" onclick="openCity(event, 'k-tab2')">2020</button>
+                    <button class="tablinks1" onclick="openCity(event, 'k-tab3')">2021</button>
+                    <button class="tablinks1" onclick="openCity(event, 'k-tab4')">2022</button>
+                </div>
+
+                <div id="k-tab1" class="tabcontent1">
+                    <div class="red">
+                        kl 20:00 - 22:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Julefrokost</p>
+                        <div class="date-container frokost">
+                            <p class="date">December d. 20</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="yellow">
+                        kl 19:00 - 21:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Møde med forældre</p>
+                        <div class="date-container meeting">
+                            <p class="date">November d. 24</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="blue">
+                        kl 15:00 - 16:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Ledermøde</p>
+                        <div class="date-container bowling">
+                            <p class="date">November d. 15</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="green">
+                        kl 18:00 - 20:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Team building</p>
+                        <div class="date-container team">
+                            <p class="date">November d. 10</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="k-tab2" class="tabcontent1">
+                    <div class="red">
+                        kl 20:00 - 22:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Julefrokost</p>
+                        <div class="date-container frokost">
+                            <p class="date">December d. 20</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="yellow">
+                        kl 19:00 - 21:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Møde med forældre</p>
+                        <div class="date-container meeting">
+                            <p class="date">November d. 24</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="blue">
+                        kl 15:00 - 16:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Ledermøde</p>
+                        <div class="date-container bowling">
+                            <p class="date">November d. 15</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="green">
+                        kl 18:00 - 20:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Team building</p>
+                        <div class="date-container team">
+                            <p class="date">November d. 10</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="k-tab3" class="tabcontent1">
+                    <div class="red">
+                        kl 20:00 - 22:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Julefrokost</p>
+                        <div class="date-container frokost">
+                            <p class="date">December d. 20</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="yellow">
+                        kl 19:00 - 21:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Møde med forældre</p>
+                        <div class="date-container meeting">
+                            <p class="date">November d. 24</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="blue">
+                        kl 15:00 - 16:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Ledermøde</p>
+                        <div class="date-container bowling">
+                            <p class="date">November d. 15</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="green">
+                        kl 18:00 - 20:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Team building</p>
+                        <div class="date-container team">
+                            <p class="date">November d. 10</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="k-tab4" class="tabcontent1">
+                    <div class="red">
+                        kl 20:00 - 22:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Julefrokost</p>
+                        <div class="date-container frokost">
+                            <p class="date">December d. 20</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="yellow">
+                        kl 19:00 - 21:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Møde med forældre</p>
+                        <div class="date-container meeting">
+                            <p class="date">November d. 24</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="blue">
+                        kl 15:00 - 16:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Ledermøde</p>
+                        <div class="date-container bowling">
+                            <p class="date">November d. 15</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="green">
+                        kl 18:00 - 20:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Team building</p>
+                        <div class="date-container team">
+                            <p class="date">November d. 10</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- kalender tab end -->
+
+            <!-- kontaktoplysninger tab start -->
+            <div id="kontaktoplysninger" class="tabcontent">
+                <h2 class="tab1-heading">Kontaktoplysninger</h2>
+                <hr class="arrangementer-hr" />
+
+                <section class="cardboard">
+                    <div class="card">
+                        <img class="contact_person" src="../assets/img/img_avatar.png" alt="Avatar" style="width: 100%" />
+                        <div class="container">
+                            <h4><b>John Doe</b></h4>
+                            <p>Tlf: 123456789</p>
+                            <p>Excalibur medlem</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="contact_person" src="../assets/img/img_avatar2.png" alt="Avatar" style="width: 100%" />
+                        <div class="container">
+                            <h4><b>John Doe</b></h4>
+                            <p>Tlf: 123456789</p>
+                            <p>Excalibur medlem</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="contact_person" src="../assets/img/img_avatar.png" alt="Avatar" style="width: 100%" />
+                        <div class="container">
+                            <h4><b>Kim Doe</b></h4>
+                            <p>Tlf: 123456789</p>
+                            <p>Excalibur medlem</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="contact_person" src="../assets/img/img_avatar2.png" alt="Avatar" style="width: 100%" />
+                        <div class="container">
+                            <h4><b>John Doe</b></h4>
+                            <p>Tlf: 123456789</p>
+                            <p>Excalibur medlem</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="contact_person" src="../assets/img/img_avatar.png" alt="Avatar" style="width: 100%" />
+                        <div class="container">
+                            <h4><b>John Doe</b></h4>
+                            <p>Tlf: 123456789</p>
+                            <p>Excalibur medlem</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="contact_person" src="../assets/img/img_avatar2.png" alt="Avatar" style="width: 100%" />
+                        <div class="container">
+                            <h4><b>John Doe</b></h4>
+                            <p>Tlf: 123456789</p>
+                            <p>Excalibur medlem</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="contact_person" src="../assets/img/img_avatar.png" alt="Avatar" style="width: 100%" />
+                        <div class="container">
+                            <h4><b>John Doe</b></h4>
+                            <p>Tlf: 123456789</p>
+                            <p>Excalibur medlem</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="contact_person" src="../assets/img/img_avatar2.png" alt="Avatar" style="width: 100%" />
+                        <div class="container">
+                            <h4><b>John Doe</b></h4>
+                            <p>Tlf: 123456789</p>
+                            <p>Excalibur medlem</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="contact_person" src="../assets/img/img_avatar.png" alt="Avatar" style="width: 100%" />
+                        <div class="container">
+                            <h4><b>John Doe</b></h4>
+                            <p>Tlf: 123456789</p>
+                            <p>Excalibur medlem</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="contact_person" src="../assets/img/img_avatar2.png" alt="Avatar" style="width: 100%" />
+                        <div class="container">
+                            <h4><b>John Doe</b></h4>
+                            <p>Tlf: 123456789</p>
+                            <p>Excalibur medlem</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="contact_person" src="../assets/img/img_avatar.png" alt="Avatar" style="width: 100%" />
+                        <div class="container">
+                            <h4><b>Bjarne Riis</b></h4>
+                            <p>Tlf: 123456789</p>
+                            <p>Excalibur medlem</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="contact_person" src="../assets/img/img_avatar2.png" alt="Avatar" style="width: 100%" />
+                        <div class="container">
+                            <h4><b>John Doe</b></h4>
+                            <p>Tlf: 123456789</p>
+                            <p>Excalibur medlem</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- kontaktoplysninger tab end -->
+
+            <!-- nyheder tab start -->
+            <div id="nyheder" class="tabcontent">
+                <h2 class="tab1-heading">Nyheder</h2>
+                <hr class="arrangementer-hr" />
+
+                <div class="tab1">
+                    <button class="tablinks1" onclick="openCity(event, 'n-tab1')">2019</button>
+                    <button class="tablinks1" onclick="openCity(event, 'n-tab2')">2020</button>
+                    <button class="tablinks1" onclick="openCity(event, 'n-tab3')">2021</button>
+                    <button class="tablinks1" onclick="openCity(event, 'n-tab4')">2022</button>
+                </div>
+
+                <div id="n-tab1" class="tabcontent1">
+                    <div class="red" id="red-box1">
+                        kl 20:00 - 22:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Fantasydage</p>
+                        <div class="date-container fantasy">
+                            <p class="date">December d. 20</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="yellow" id="yellow-box1">
+                        kl 19:00 - 21:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Familiecon</p>
+                        <div class="date-container f-con">
+                            <p class="date">November d. 24</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="blue" id="blue-box1">
+                        kl 15:00 - 16:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">De 5 Riger</p>
+                        <div class="date-container riger">
+                            <p class="date">November d. 15</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="green" id="green-box1">
+                        kl 18:00 - 20:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Nyt samarbejde med rollespilsbutik</p>
+                        <div class="date-container spilbutik">
+                            <p class="date">November d. 10</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="n-tab2" class="tabcontent1">
+                    <div class="red" id="red-box2">
+                        kl 20:00 - 22:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Fantasydage</p>
+                        <div class="date-container fantasy">
+                            <p class="date">December d. 20</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="yellow" id="yellow-box2">
+                        kl 19:00 - 21:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Familiecon</p>
+                        <div class="date-container f-con">
+                            <p class="date">November d. 24</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="blue" id="blue-box2">
+                        kl 15:00 - 16:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">De 5 Riger</p>
+                        <div class="date-container riger">
+                            <p class="date">November d. 15</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="green" id="green-box2">
+                        kl 18:00 - 20:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Nyt samarbejde med rollespilsbutik</p>
+                        <div class="date-container spilbutik">
+                            <p class="date">November d. 10</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="n-tab3" class="tabcontent1">
+                    <div class="red" id="red-box3">
+                        kl 20:00 - 22:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Fantasydage</p>
+                        <div class="date-container fantasy">
+                            <p class="date">December d. 20</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="yellow" id="yellow-box3">
+                        kl 19:00 - 21:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Familiecon</p>
+                        <div class="date-container f-con">
+                            <p class="date">November d. 24</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="blue" id="blue-box3">
+                        kl 15:00 - 16:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">De 5 Riger</p>
+                        <div class="date-container riger">
+                            <p class="date">November d. 15</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="green" id="green-box3">
+                        kl 18:00 - 20:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Nyt samarbejde med rollespilsbutik</p>
+                        <div class="date-container spilbutik">
+                            <p class="date">November d. 10</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="n-tab4" class="tabcontent1">
+                    <div class="red" id="red-box4">
+                        kl 20:00 - 22:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Fantasydage</p>
+                        <div class="date-container fantasy">
+                            <p class="date">December d. 20</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="yellow" id="yellow-box4">
+                        kl 19:00 - 21:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Familiecon</p>
+                        <div class="date-container f-con">
+                            <p class="date">November d. 24</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="blue" id="blue-box4">
+                        kl 15:00 - 16:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">De 5 Riger</p>
+                        <div class="date-container riger">
+                            <p class="date">November d. 15</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+
+                    <div class="green" id="green-box4">
+                        kl 18:00 - 20:00
+                        <hr class="hr-2019" />
+                        <p class="arrangement-txt">Nyt samarbejde med rollespilsbutik</p>
+                        <div class="date-container spilbutik">
+                            <p class="date date-1">November d. 10</p>
+                            <i class="fas fa-check"></i>
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- nyheder tab end -->
+
+            <!-- sikkerhed tab start -->
+            <div id="sikkerhed" class="tabcontent">
+                <h2 class="tab1-heading">Sikkerhed</h2>
+                <hr class="arrangementer-hr" />
+
+                <div class="row">
+                    <div class="column">
+                        <i class="fas fa-lock lock"></i>
+                        <p>Jens hansen Uploaded et post som skal tjekkes</p>
+                    </div>
+                    <div class="column">
+                        <i class="fas fa-lock lock"></i>
+                        <p>Jens hansen Uploaded et post som skal tjekkes</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <i class="fas fa-lock lock"></i>
+                        <p>Jens hansen Uploaded et post som skal tjekkes</p>
+                    </div>
+                    <div class="column">
+                        <i class="fas fa-lock lock"></i>
+                        <p>Jens hansen Uploaded et post som skal tjekkes</p>
+                    </div>
+                </div>
+            </div>
+            <!-- sikkerhed tab end -->
+            <!-- TABS CONTENT END -->
+        </main>
+        <!-- MAIN WRAPPER END -->
+        <script src="../admin_side/js/admin.js"></script>
+    </body>
+</html>

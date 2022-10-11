@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="../medlems_side/css/medlems_side.css" />
+        <link rel="icon" type="image/png" href="../assets/img/Excalibur_Icon.png" />
+
+        <!-- AnimXYZ START -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core" />
+        <!-- AnimXYZ END -->
+        <title>Medlems-Side</title>
+    </head>
+    <body>
+        <div class="woodPlankLeft"></div>
+
+        <div class="loginContainer">
+            <div class="subContainer">
+                <h2 class="navn">Brugernavn</h2>
+
+                <input class="userForm" type="text" placeholder="Brugernavn" />
+
+                <h2 class="pass">Adgangskode</h2>
+
+                <input class="userPassword" type="password" placeholder="Adgangskode" />
+
+                <a href="../min_side/min_side.html"><button class="loginBtn">Log ind</button></a>
+
+                <p class="accountTxt">
+                    Opret en konto for at få<br />
+                    adgang til Excalibur
+                </p>
+
+                <button class="regBtn">Opret konto</button>
+
+                <!-- modal start -->
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn">Betingelser</button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal" xyz="down-5 fade-100% ease-out">
+                    <!-- Modal content -->
+                    <div class="modal-content xyz-in">
+                        <span class="close">&times;</span>
+                        <h2 class="modalHeader">Bliv Medlem</h2>
+                        <br />
+                        <p class="modalParagraph">
+                            For at deltage i Excaliburs arrangementer skal man være medlem af foreningen. Et medlemskab koster 100 kr/kalenderår og giver en gratis spilgang til
+                            Undallslund plantage, når man melder sig ind.<br /><br />
+
+                            Derfor skal man melde sig ind i Excalibur når man deltager til Juniorrollespil. Ude i skoven kan man udfylde en indmeldings-blanket ved check-in, men
+                            for at gøre det lettere og hurtigere for jer, har vi lagt indmeldings-blanketten online, så man kan downloade den, printe den ud og udfylde den
+                            hjemmefra. Så går det væsentligt hurtigere derude!<br /><br />
+
+                            Når man bliver medlem af Excaliburs bliver man også automatisk medlem af rollespillernes landsforening, Bifrost. Du kan læse mere om Bifrost og de knapt
+                            50 andre lokalforeninger på landsforeningen » bifrost.dk.
+                        </p>
+                    </div>
+                </div>
+                <!-- modal end -->
+            </div>
+
+            <img class="door" src="../medlems_side/medlems_side_img/medlemLoginDoor.png" alt="A Wooden Door" />
+        </div>
+
+        <div class="woodPlankRight"></div>
+
+        <!-- JS files START -->
+        <script src="../medlems_side/js/medlems_side.js"></script>
+        <!-- JS files END -->
+    </body>
+</html>

@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Aniron";
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #2e2e2e;
+    overflow-x: hidden;
+}
+
+::selection {
+    display: none;
+}
+
+/* SCROLL BAR STYLING START */
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+html::-webkit-scrollbar-thumb {
+    background: #664b40;
+    outline: 3px solid #664b40;
+    outline-offset: 1px;
+    border-radius: 0.2rem;
+}
+/* SCROLL BAR STYLING END */
+
+/* Header styling START */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo {
+    width: 100px;
+}
+
+/* Header styling END */
+
+/* Landing Page styling START */
+main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 11;
+}
+
+main img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+main img#sun {
+    mix-blend-mode: screen;
+    width: 35%;
+    height: 45%;
+    transform: translateX(80%);
+}
+
+main img#forest_front {
+    z-index: 10;
+    transform: translateX(-1%);
+    width: 1935px;
+}
+
+#scrollDiv {
+    height: 5000px;
+}
+
+main img#excalibur_sword {
+    height: 125px;
+    object-fit: contain;
+    transform: translateY(675%);
+}
+
+main img#sword_stone {
+    height: 125px;
+    object-fit: contain;
+    transform: translateY(675%);
+}
+
+main img#bow_arrow {
+    width: 150px;
+    z-index: 99;
+    transform: translateY(40%);
+    object-fit: contain;
+    cursor: pointer;
+    margin-left: 4.5rem;
+}
+
+main img#main_cave {
+    object-fit: contain;
+    height: 300px;
+    position: relative;
+    margin-top: 46rem;
+}
+
+#flying_birds {
+    width: 150px;
+    object-fit: contain;
+    transform: translate(175%, -25%);
+}
+
+#text {
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 1.5vw;
+    margin-right: 2rem;
+    z-index: 9;
+    margin-bottom: 1rem;
+}
+
+.sec {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+    height: 1000px;
+}
+
+.sec img {
+    height: 900px;
+    bottom: 0;
+    position: absolute;
+    transform: translate(5%, 15%);
+    z-index: 10;
+}
+
+.sec::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    background: linear-gradient(to bottom, #1c0522, transparent);
+    transform: translateY(100%);
+}
+
+/* Landing Page styling END */
+
+/* Warrior styling START */
+
+.warrior {
+    width: 200px;
+    position: fixed;
+    object-fit: contain;
+    margin-top: 25.2rem;
+    left: 44.2%;
+}
+#fixed {
+    transform: translateY(-40%);
+}
+
+#fixed2 {
+    transform: translateY(0%);
+}
+/* Warrior styling END */
+
+/* Dirt Path styling START */
+.path-sec {
+    height: 6400px;
+    background-image: url(../assets/img/path.png);
+    background-size: cover;
+}
+/* Yellow dragon styling START */
+.dragon-box {
+    display: flex;
+    height: 1000px;
+    justify-content: right;
+}
+
+#red_dragon {
+    position: absolute;
+    left: 30px;
+    transform: translateY(25%);
+    width: 500px;
+    object-fit: contain;
+}
+
+#yellow_dragon {
+    position: relative;
+    width: 700px;
+    object-fit: contain;
+    transform: translate(30%, -30%);
+}
+
+.activate_dragon {
+    animation: activate_dragon 8s infinite;
+}
+
+@keyframes activate_dragon {
+    from {
+        top: 0px;
+        left: 150px;
+    }
+    to {
+        top: 600px;
+        left: -2100px;
+    }
+}
+/* Yellow dragon styling END */
+
+/* Golem styling START */
+.golem-box {
+    display: flex;
+    justify-content: center;
+    height: 1000px;
+    width: 100%;
+}
+
+#walking_golem {
+    width: 250px;
+    transform: translateY(30%);
+    object-fit: contain;
+}
+/* Golem styling END */
+
+/* Bow Enemies styling START */
+.enemies-box {
+    width: 100%;
+    display: flex;
+    height: 1000px;
+}
+
+.enemy-bx-1,
+.enemy-bx-2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#goblin {
+    width: 250px;
+    object-fit: contain;
+}
+
+#archer {
+    width: 225px;
+    object-fit: contain;
+}
+/* Bow Enemies styling END */
+
+/* Orc Section START */
+.orc-box {
+    width: 100%;
+    height: 2500px;
+    display: grid;
+    grid-template: repeat(20, 1fr) / repeat(25, 1fr);
+}
+
+#orc_walk {
+    object-fit: contain;
+    width: 190px;
+    grid-area: 17/6/19/8;
+    position: relative;
+}
+
+.activate_orc {
+    animation: activate_orc 5s;
+}
+
+@keyframes activate_orc {
+    from {
+        left: 0px;
+    }
+    50% {
+        left: 250px !important;
+    } /* ignored */
+    to {
+        left: 500px;
+    }
+}
+/* Orc Section END */
+/* Dirt Path styling END */
+
+/* Footer section styling START */
+footer {
+    display: flex;
+    width: 100%;
+    height: 900px;
+}
+
+.tavern-box,
+.admin-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.tavern {
+    object-fit: contain;
+    width: 600px;
+    cursor: pointer;
+    transform: translateY(-60%);
+}
+
+.notice_board {
+    object-fit: contain;
+    width: 300px;
+    visibility: visible;
+}
+
+/* Footer section styling END */
+
+// modal start
+#Btn {
+    grid-area: 18/19/20/21;
+    transform: translateY(50%);
+    cursor: pointer;
+    visibility: hidden;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 12;
+    padding-top: 75px;
+    transform: translateX(-10%);
+    left: 0;
+    top: 0;
+    width: 125%;
+    height: 125%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Modal Content */
+.modal-content {
+    background-image: url(../assets/img/townboard.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 60%;
+    height: 100%;
+}
+
+/* The Close Button */
+.close {
+    color: #fff;
+    float: right;
+    font-size: 30px;
+    transform: translateY(-20%);
+    margin: 0 0.5rem 2rem 0;
+}
+
+.close:hover,
+.close:focus {
+    color: lightblue;
+    text-decoration: none;
+    cursor: pointer;
+}
+// modal end
+
+/* MODAL NOTES STYLING START */
+h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+ul,
+li {
+    list-style: none;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    transform: translate(2.5%, 20%);
+}
+ul li a {
+    text-decoration: none;
+    color: #000;
+    background: transparent;
+    display: block;
+    height: 15em;
+    width: 15em;
+    padding: 1em;
+    transform: rotate(-6deg);
+    background-image: url(../assets/img/Rusty-nail.png);
+    background-size: cover;
+    transition: transform 0.15s linear;
+}
+
+ul li a:hover,
+ul li a:focus {
+    transform: scale(1.25);
+    position: relative;
+    z-index: 5;
+}
+
+ul li {
+    margin: 1em;
+}
+
+.arrangementer {
+    font-size: 20px !important;
+}
+/* MODAL NOTES STYLING END */

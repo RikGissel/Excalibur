@@ -1,0 +1,108 @@
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+body {
+    background-color: #212121;
+    background: linear-gradient(0deg, rgba(000, 0, 000, 0.6), rgba(00, 0, 000, 0.8)), url(../../assets/img/spring_forest.jpeg) center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+html {
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.snip1529 {
+    background-color: #000000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 10px;
+    max-width: 310px;
+    min-width: 250px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    min-height: 450px;
+}
+
+.snip1529 * {
+    box-sizing: border-box;
+    transition: all 0.25s ease;
+}
+
+.snip1529 img {
+    max-width: 100%;
+    vertical-align: top;
+    position: relative;
+    opacity: 0.75;
+}
+
+.snip1529 figcaption {
+    padding: 25px 20px 25px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.snip1529 .date {
+    background-color: #fff;
+    color: #333;
+    font-size: 18px;
+    font-weight: 800;
+    min-height: 48px;
+    min-width: 48px;
+    padding: 10px 0;
+    position: absolute;
+    right: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0;
+}
+
+.snip1529 .date span {
+    display: block;
+    line-height: 14px;
+}
+
+.snip1529 .date .month {
+    font-size: 11px;
+}
+
+.snip1529 h3,
+.snip1529 p {
+    margin: 0;
+    padding: 0;
+}
+
+.snip1529 h3 {
+    font-weight: 800;
+    letter-spacing: -0.4px;
+}
+
+.snip1529 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.snip1529:hover .hover,
+.snip1529.hover .hover {
+    transition-delay: 0.1s;
+    opacity: 1;
+}
+
+.snip1529:hover .date,
+.snip1529.hover .date {
+    transform: translateY(-100%);
+}

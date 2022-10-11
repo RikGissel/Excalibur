@@ -1,0 +1,493 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  white-space: nowrap;
+  font-family: "Roboto";
+  overflow: hidden;
+}
+
+/* LOGO STYLE START */
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0 0 20px;
+}
+
+header .admin-header {
+  width: 150px;
+}
+
+.logo-hr {
+  color: white;
+  margin: 15px 10px;
+}
+
+/* LOGO STYLE END */
+/* ADMIN SECTION STYLE START */
+#admin-sec {
+  background-color: black;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.3))), url(../../assets/img/adminForside.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../../assets/img/adminForside.jpg);
+  background-size: cover;
+}
+
+.heading {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-area: 3/4/5/7;
+  color: white;
+  font-size: 80px;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+/* ADMIN SECTION STYLE END */
+/* TAB STYLE START */
+.tab {
+  float: left;
+  background-color: #303946;
+  width: 10%;
+  height: 100vh;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: white;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+#icons1,
+#icons2,
+#icons3,
+#icons4,
+#icons5,
+#icons6 {
+  margin-right: 10px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #3b4f68;
+}
+
+/* Style the tab content */
+.tabcontent {
+  -ms-grid-rows: (1fr)[20];
+  -ms-grid-columns: (1fr)[10];
+      grid-template: repeat(20, 1fr)/repeat(10, 1fr);
+  padding: 0px 12px;
+  width: 90%;
+  height: 100vh;
+}
+
+/* TAB STYLE END */
+/* ARRANGEMENTER SECTION START */
+.arrangementer-hr {
+  height: 1px;
+  -webkit-transform: translateX(-0.3%);
+          transform: translateX(-0.3%);
+  margin-top: 14px;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 10;
+  grid-area: 4/1/5/11;
+}
+
+.tab1-heading {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 4/1/5/2;
+  font-size: 45px;
+  -webkit-transform: translateY(-80%);
+          transform: translateY(-80%);
+}
+
+/* Style the tab */
+.tab1 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 10;
+  grid-area: 5/1/6/11;
+  width: 100%;
+}
+
+/* Style the buttons inside the tab */
+.tab1 button {
+  background-color: inherit;
+  float: left;
+  cursor: pointer;
+  padding: 15px 50px 15px 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 20px;
+  margin-left: 14rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+/* Change background color of buttons on hover */
+.tab1 button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create an active/current tablink class */
+.tab1 button.active {
+  background-color: #3b4f68;
+  color: white;
+}
+
+/* Style the tab content */
+.tabcontent1 {
+  display: none;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 7/1/9/2;
+  padding-left: 15px;
+}
+
+.red,
+.yellow,
+.blue,
+.green {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120%;
+  -webkit-transform: translateX(22%);
+          transform: translateX(22%);
+}
+
+.hr-2019 {
+  height: 50px;
+  margin: 0rem 1rem 0rem 5rem;
+  /* margin-left: 10rem; */
+}
+
+/* TEXT CONTAINER START */
+.arrangement-txt {
+  font-weight: 700;
+  font-size: 20px;
+  padding-left: 4rem;
+}
+
+.date-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  padding-left: 15rem;
+}
+
+.date {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* TEXT CONTAINER END */
+/* RED START */
+.red {
+  border-left: 8px solid red;
+  padding: 30px;
+}
+
+/* RED END */
+/* YELLOW START */
+.yellow {
+  border-left: 8px solid yellow;
+  padding: 30px;
+}
+
+.krea-dag {
+  padding-left: 19.8rem;
+}
+
+/* YELLOW END */
+/* BLUE START */
+.blue {
+  border-left: 8px solid blue;
+  padding: 30px;
+}
+
+.bowling {
+  padding-left: 18.7rem;
+}
+
+/* BLUE END */
+/* GREEN START */
+.green {
+  border-left: 8px solid limegreen;
+  padding: 30px;
+}
+
+.rollespil {
+  padding-left: 12rem;
+}
+
+/* GREEN END */
+/* ARRANGEMENTER SECTION END */
+/* BILLEDE SECTION START */
+.img-sec-billeder {
+  width: 40%;
+  border-radius: 5px;
+}
+
+.billede-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 15rem;
+  -webkit-transform: translateX(30%);
+          transform: translateX(30%);
+}
+
+.billede-tab i {
+  padding: 0 20px;
+  -webkit-transform: translateX(15%);
+          transform: translateX(15%);
+}
+
+/* BILLEDE SECTION END */
+/* KALENDER SECTION START */
+.frokost {
+  padding-left: 18.7rem;
+}
+
+.meeting {
+  padding-left: 14rem;
+}
+
+.team {
+  padding-left: 17rem;
+}
+
+/* KALENDER SECTION END */
+/* KONTAKT SECTION START */
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardboard {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 225px 225px 225px 225px 225px 225px;
+      grid-template-columns: 225px 225px 225px 225px 225px 225px;
+  -ms-grid-rows: (275px)[2];
+      grid-template-rows: repeat(2, 275px);
+  height: 5vh;
+  grid-gap: 50px;
+  width: 50vh;
+  -ms-grid-row: 7;
+      grid-row-start: 7;
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-shadow: 5px 5px 20px;
+          box-shadow: 5px 5px 20px;
+  border-radius: 5px;
+}
+
+.contact_person {
+  border-radius: 5px 5px 0 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* KONTAKT SECTION END */
+/* NYHED SECTION START */
+/* nyhed red box style start */
+.fantasy {
+  -webkit-transform: translateX(5%);
+          transform: translateX(5%);
+}
+
+#red-box1,
+#red-box2,
+#red-box3,
+#red-box4 {
+  width: 100%;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+}
+
+/* nyhed red box style end */
+/* nyhed yellow box style start */
+.f-con {
+  -webkit-transform: translateX(7%);
+          transform: translateX(7%);
+}
+
+#yellow-box1,
+#yellow-box2,
+#yellow-box3,
+#yellow-box4 {
+  width: 100%;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+}
+
+/* nyhed yellow box style end */
+/* nyhed blue box style start */
+.riger {
+  -webkit-transform: translateX(8%);
+          transform: translateX(8%);
+}
+
+#blue-box1,
+#blue-box2,
+#blue-box3,
+#blue-box4 {
+  width: 100%;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+}
+
+/* nyhed blue box style end */
+/* nyhed green box style start*/
+.spilbutik i {
+  padding: 0 40px;
+  -webkit-transform: translateX(55%);
+          transform: translateX(55%);
+}
+
+.spilbutik {
+  -webkit-transform: translateX(-9%);
+          transform: translateX(-9%);
+}
+
+#green-box1,
+#green-box2,
+#green-box3,
+#green-box4 {
+  width: 100%;
+  -webkit-transform: translateX(12.5%);
+          transform: translateX(12.5%);
+}
+
+/* nyhed green box style end*/
+/* NYHED SECTION END */
+/* SIKKERHED SECTION START */
+#sikkerhed {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 25px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border: solid 1px grey;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (300px)[2];
+      grid-template-rows: repeat(2, 300px);
+  height: 3vh;
+  grid-gap: 25px;
+  width: 60vh;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  -webkit-transform: translateX(40%);
+          transform: translateX(40%);
+}
+
+.lock {
+  font-size: 40px;
+}
+
+.heading {
+  padding-left: 8rem;
+}
+
+/* SIKKERHED SECTION END */
+/*# sourceMappingURL=admin.css.map */

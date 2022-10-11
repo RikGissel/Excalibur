@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="icon" type="image/png" href="assets/img/Excalibur_Icon.png" />
+
+        <!-- Font Awesome Link -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+            crossorigin="anonymous"
+        />
+
+        <!-- AnimXYZ START -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core" />
+        <!-- AnimXYZ END -->
+        <title>Excalibur</title>
+    </head>
+    <body>
+        <!-- Main Section START -->
+        <header>
+            <img src="assets/img/Excalibur_Logo.png" class="logo" alt="" />
+        </header>
+
+        <main>
+            <img src="assets/img/sunset-bg.png" id="sunset_bg" />
+            <img src="assets/img/sun.png" id="sun" />
+            <img src="https://cdn.discordapp.com/attachments/897304698468565022/898044178368458792/mountains_behind.png" id="mountains_behind" />
+            <h2 id="text"></h2>
+            <img src="assets/img/Forest.png" id="forest_front" />
+
+            <img id="flying_birds" src="assets/img/Birds.png" alt="A flock of birds" />
+            <img src="assets/img/cave.png" id="main_cave" alt="A Deep Cave" />
+            <img src="assets/warrior_img/0_Warrior_Walk_0.png" alt="walk01" class="warrior" id="warrior_walk" onscroll="warriorFunction()" />
+            <img src="assets/img/Bow_Arrow.gif" alt="Shooting bow" id="bow_arrow" />
+            <div id="scrollDiv"></div>
+
+            <img src="assets/img/Excalibur_Sword.png" id="excalibur_sword" alt="A Gloryhole oops, I meant glorious sword :-)" />
+            <img src="assets/img/Sword_Stone.png" id="sword_stone" alt="A stone" />
+        </main>
+
+        <div class="sec" id="sec"><img src="assets/img/cave.png" alt="A Deep Cave" /></div>
+        <!-- Main Section END -->
+
+        <!-- Dirt Path START -->
+        <section class="path-sec">
+            <section class="dragon-box">
+                <img src="assets/img/red_dragon.gif" alt="A Red Dragon" id="red_dragon" />
+                <img src="assets/img/yellow_dragon.gif" alt="A Yellow Dragon" id="yellow_dragon" />
+            </section>
+            <section class="golem-box">
+                <img src="assets/img/Golem.gif" alt="A Rock Solid Golem" id="walking_golem" />
+            </section>
+
+            <section class="enemies-box">
+                <section class="enemy-bx-1">
+                    <img src="assets/img/goblin.gif" alt="A Green Goblin" id="goblin" />
+                </section>
+                <section class="enemy-bx-2">
+                    <img src="assets/img/Archer.gif" alt="A Human Archer" id="archer" />
+                </section>
+            </section>
+
+            <section class="orc-box">
+                <img src="assets/orc_img/Orc_Walk_0.png" alt="An Orc" id="orc_walk" />
+
+                <!-- modal start -->
+                <!-- Trigger/Open The Modal -->
+                <button id="Btn"><img src="assets/img/noticeboard.png" class="notice_board" alt="A Noticeboard" /></button>
+
+                <!-- The Modal -->
+                <div id="Modal" class="modal" xyz="down-5 fade-100% ease-out">
+                    <!-- Modal content -->
+                    <div class="modal-content xyz-in">
+                        <span class="close"><i id="X_icon" class="fas fa-times"></i></span>
+                        <ul>
+                            <li>
+                                <a href="Galleri/galleri.html">
+                                    <h2>Galleri</h2>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Arrangementer/arrangementer.html">
+                                    <h2 class="arrangementer">Arrange-<br />menter</h2>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Nyheder/nyheder.html">
+                                    <h2>Nyheder</h2>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Foraeldre_Info/Foraeldre_Info.html">
+                                    <h2>Forældre info</h2>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="kontakt_side/kontakt_side.html">
+                                    <h2>Kontakt</h2>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- modal end -->
+            </section>
+            <footer>
+                <section class="tavern-box">
+                    <a href="medlems_side/medlems-side.html"><img src="assets/img/hotel_inn_map.png" class="tavern" alt="A Tavern" /></a>
+                </section>
+                <section class="admin-box">
+                    <a href="admin_side/admin.html" target="_blank"><img src="assets/img/outHouse.png" alt="An Outhouse" /></a>
+                </section>
+            </footer>
+        </section>
+
+        <!-- Dirt Path END -->
+        <!-- Scripts + JS Libraries -->
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+    </body>
+</html>
